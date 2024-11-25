@@ -9,7 +9,7 @@ spring:
     vectorstore:
       mariadb:
         initialize-schema: true
-        distance-type: COSINE
+        distance-type: EUCLIDEAN
         dimensions: 1536
     openai:
       api-key: ${OPEN_AI_KEY}
