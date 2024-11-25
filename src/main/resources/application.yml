@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: mariadb-test
+  datasource:
+    url: jdbc:mariadb://localhost/test
+    username: myUser
+    password: myPwd
+  ai:
+    vectorstore:
+      mariadb:
+        initialize-schema: true
+        distance-type: COSINE
+        dimensions: 1536
+    openai:
+      api-key: ${OPEN_AI_KEY}
