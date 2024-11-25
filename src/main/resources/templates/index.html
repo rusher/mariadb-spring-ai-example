@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+do some search:
+
+<form action="/search" method="GET">
+    <input type="text" th:value="${message}" id="message" name="message" style="font-size: 24px; width: 80%; padding: 10px; margin: 10px;"/>
+</form>
+
+<div >
+    [(${result})]
+</div>
+
+
+</body>
+</html>
+
