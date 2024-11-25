@@ -41,12 +41,6 @@ public class RagController {
     return "index.html";
   }
 
-  @GetMapping("/purge")
-  public ResponseEntity<String> purgeEmbeddings() {
-    jdbcTemplate.execute("TRUNCATE TABLE vector_store");
-    return ResponseEntity.ok().body("embeddings purged");
-  }
-
   @GetMapping("/init")
   public ResponseEntity<String> init() throws IOException {
     // read and transform pdf into Documents
